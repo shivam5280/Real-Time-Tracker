@@ -18,7 +18,7 @@ io.on("connection", function(socket){
     
     socket.on("disconnect", function(){
         io.emit("user-disconnected", socket.id);
-    })
+    });
 });
 
 app.get("/", function (req, res) {
